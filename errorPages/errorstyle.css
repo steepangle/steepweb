@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mono:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Fonts
+  - Noto Sans Display: Used for headings and titles.
+  - Noto Sans Mono: Used for code blocks and monospace text.
+  - Noto Sans: Used for general text.
+  - Ubuntu: Used for the main body text.
+*/
+
+/* font-weight
+  - 100: Thin
+  - 300: Light
+  - 400: Regular
+  - 500: Medium
+  - 700: Bold
+*/
+
+body {
+    margin: 0;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 300;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-family: Noto Sans Mono, sans-serif;
+    font-size: 6rem;
+    font-weight: 100;
+    margin: 0;
+    color: #ff5555;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #ff5555;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #e64545;
+}
