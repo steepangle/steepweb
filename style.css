@@ -134,6 +134,10 @@ div.footer {
     min-width: 70%;
 }
 
+.branch {
+    min-width: 70%;
+}
+
 button {
     padding: 8px 16px;
     margin: 5px 0;
