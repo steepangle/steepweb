@@ -89,6 +89,71 @@ div.footer {
     vertical-align: middle;
 }
 
+/* NavBar */
+div.navbar {
+    width: 100%;
+}
+
+.navbar h1.brand{
+    font-family: "Noto Sans Mono", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.navbar h1.brand img {
+    width: 35px;
+    margin-inline: 7px;
+    vertical-align: top;
+}
+
+.navbar li.brand {
+    float: left;
+}
+
+.navbar li {
+    float: right;
+}
+
+.navbar button {
+    position: absolute;
+    right: 20px;
+    top: 5.25px;
+    padding: 10px 20px;
+    background-color: #fe0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #646e83;
+    top: 0;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+    background-color: #00000020;
+}
+
+.navbar li a.active {
+    background-color: #ffaa07;
+}
+
 /* Stuff */
 button {
     padding: 8px 16px;
