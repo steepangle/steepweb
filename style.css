@@ -78,6 +78,27 @@ footer {
     min-width: 70%;
 }
 
+.branch dt {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: "Ubuntu", Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.branch dd {
+    font-family: "Noto Sans", monospace;
+    color: #4b4c50;
+    margin-left: 10px;
+}
+
+.branch h1 {
+    font-family: "Noto Sans Mono", monospace;
+    font-weight: 100;
+    font-size: 2.8rem;
+    margin-bottom: -10px;
+}
+
 .super-head{
     font-family: "Noto Sans Display", sans-serif;
     font-weight: 350;
