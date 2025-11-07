@@ -46,12 +46,12 @@ input, select {
 }
 
 /* Footer */
-footer dl {
+footer ul {
     list-style-type: none;
     margin: 0;
     padding: 20px;
     overflow: hidden;
-    background-color: #4b4c50;
+    background-color: #000000;
     color: #ffffff;
 }
 
@@ -60,6 +60,14 @@ footer {
     bottom: 0;
 }
 
+footer li {
+    float: right;
+}
+
+footer li.footer-left {
+    float: left;
+    color: #a2a7ad;
+}
 
 /* Main */
 .main-content {
