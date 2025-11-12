@@ -62,6 +62,7 @@ footer {
 
 footer li {
     float: right;
+    margin-left: 10px;
 }
 
 footer li.footer-left {
