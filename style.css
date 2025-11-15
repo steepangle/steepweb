@@ -61,13 +61,13 @@ footer {
 }
 
 footer li {
-    float: right;
     margin-left: 10px;
+    color: #a2a7ad;
+    float: right;
 }
 
 footer li.footer-left {
     float: left;
-    color: #a2a7ad;
 }
 
 /* Main */
@@ -143,6 +143,11 @@ div.navbar {
     float: left;
 }
 
+.navbar ul.nav-staag li.brand {
+    color: azure;
+    float: left;
+}
+
 .navbar li {
     float: right;
 }
@@ -174,7 +179,7 @@ div.navbar {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #646e8360;
+    background-color: #1c1d22;
     top: 0;
 }
 
@@ -187,11 +192,15 @@ div.navbar {
 }
 
 .navbar li a:hover:not(.active) {
-    background-color: #00000020;
+    background-color: #ffffff10;
 }
 
 .navbar li a.active {
     background-color: #ffaa07;
+}
+
+.navbar ul.nav-staag li a.active {
+    background-color: #7284b7;
 }
 
 /* Stuff */
