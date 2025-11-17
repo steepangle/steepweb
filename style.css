@@ -40,7 +40,7 @@ input, select {
     margin-right: 10px;
     background-color: #4d4d4d;
     color: #ffffff;    
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     font-size: 1rem;
     font-family: "Noto Sans Mono", monospace;
@@ -82,6 +82,23 @@ footer li.footer-left {
 
 .home-container {
     min-width: 70%;
+}
+
+.left-container {
+    min-width: 70%;
+    align-items: left;
+}
+
+.right-container {
+    min-width: 70%;
+    align-items: right;
+}
+
+.linkbox {
+    border-radius: 10px;
+    width: 400px;
+    background-color: crimson;
+    padding: 10px;
 }
 
 .branch {
@@ -129,13 +146,13 @@ div.navbar {
 .navbar h1.brand{
     font-family: "Noto Sans Mono", sans-serif;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 30px;
     margin: 0;
     margin-top: 5px;
 }
 
 .navbar h1.brand img {
-    width: 35px;
+    width: 42px;
     margin-inline: 7px;
     vertical-align: top;
 }
@@ -147,6 +164,7 @@ div.navbar {
 .navbar ul.nav-staag li.brand {
     color: azure;
     float: left;
+    margin-top: 10px;
 }
 
 .navbar li {
