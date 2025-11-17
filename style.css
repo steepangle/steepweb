@@ -141,6 +141,8 @@ footer li.footer-left {
 /* NavBar */
 div.navbar {
     width: 100%;
+    position: sticky;
+    top: 0;
 }
 
 .navbar h1.brand{
@@ -190,7 +192,6 @@ div.navbar {
     padding: 0;
     overflow: hidden;
     background-color: #646e83;
-    top: 0;
 }
 
 .navbar ul.nav-staag {
@@ -199,7 +200,6 @@ div.navbar {
     padding: 0;
     overflow: hidden;
     background-color: #1c1d22;
-    top: 0;
 }
 
 .navbar li a {
