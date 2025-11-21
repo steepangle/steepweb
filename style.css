@@ -161,6 +161,7 @@ div.navbar {
 
 .navbar li.brand {
     float: left;
+    margin-top: 10px;
 }
 
 .navbar ul.nav-staag li.brand {
