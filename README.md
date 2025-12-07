@@ -1,5 +1,5 @@
 # steepangle.uk
 
-official steepangle.uk repository
-containing all web files
-managed by steepangle AG
+Official steepangle.uk repository.  
+Managed by a-Site GmbH.   
+Built for **steepangle AG** and subordinates.
