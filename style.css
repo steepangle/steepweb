@@ -33,13 +33,14 @@ h1 {
     align-items: right;
 }
 
-input, select {
+input,
+select {
     width: 300px;
     padding: 10px;
     margin: 5px 0;
     margin-right: 10px;
     background-color: #4d4d4d;
-    color: #ffffff;    
+    color: #ffffff;
     border: 1px solid #cccccc;
     border-radius: 4px;
     font-size: 1rem;
@@ -126,7 +127,7 @@ footer li.footer-left {
     margin-bottom: -10px;
 }
 
-.super-head{
+.super-head {
     font-family: "Noto Sans Display", sans-serif;
     font-weight: 350;
     font-size: 40px;
@@ -145,7 +146,7 @@ div.navbar {
     top: 0;
 }
 
-.navbar h1.brand{
+.navbar h1.brand {
     font-family: "Noto Sans Mono", sans-serif;
     font-weight: 400;
     font-size: 30px;
@@ -204,11 +205,11 @@ div.navbar {
 }
 
 .navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .navbar li a:hover:not(.active) {
@@ -228,7 +229,7 @@ button {
     padding: 8px 16px;
     margin: 5px 0;
     background-color: #4d4d4d;
-    color: #ffffff;    
+    color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
@@ -247,25 +248,25 @@ table {
     background-color: lavender;
 }
 
-th{
+th {
     font-size: 1.2rem;
     padding: 10px;
 }
 
-td{
+td {
     font-family: "Noto Sans Mono", monospace;
     padding: 10px;
 }
 
-td.out{
+td.out {
     color: #0dc713;
 }
 
-td input{
+td input {
     font-family: "Noto Sans Mono", monospace;
 }
 
-textarea{
+textarea {
     background-color: #4d4d4d;
     color: #ffffff;
     width: 90%;
@@ -281,6 +282,15 @@ a {
 }
 
 a:hover {
-    color:#e97600;
+    color: #e97600;
     text-decoration: underline;
+}
+
+.img-r {
+    align-items: right;
+    min-width: 100%;
+}
+
+.img-r img {
+    width: 50%;
 }
