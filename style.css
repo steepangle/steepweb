@@ -286,11 +286,12 @@ a:hover {
     text-decoration: underline;
 }
 
-.img-r {
-    align-items: right;
+/* DesignAndImages */
+.img-inline-r {
     min-width: 100%;
 }
 
-.img-r img {
+.img-inline-r img {
+    left: 0;
     width: 50%;
 }
