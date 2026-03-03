@@ -85,12 +85,19 @@ footer li.footer-left {
     min-width: 70%;
 }
 
-.left-container {
+.split-content {
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-content {
     min-width: 70%;
     align-items: left;
 }
 
-.right-container {
+.right-content {
     min-width: 70%;
     align-items: right;
 }
@@ -166,7 +173,7 @@ div.navbar {
 }
 
 .navbar ul.nav-staag li.brand {
-    color: azure;
+    color: white;
     float: left;
     margin-top: 10px;
 }
@@ -284,14 +291,4 @@ a {
 a:hover {
     color: #e97600;
     text-decoration: underline;
-}
-
-/* DesignAndImages */
-.img-inline-r {
-    min-width: 100%;
-}
-
-.img-inline-r img {
-    left: 0;
-    width: 50%;
 }
