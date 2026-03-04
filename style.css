@@ -27,6 +27,11 @@ body {
     min-height: 100vh;
 }
 
+body.nexgrid{
+    color: white;
+    background-color: #0F1632;
+}
+
 h1 {
     font-family: "Noto Sans Display", sans-serif;
     font-weight: 400;
