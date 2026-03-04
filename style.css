@@ -167,19 +167,29 @@ div.navbar {
     vertical-align: top;
 }
 
+.navbar li {
+    float: right;
+}
+
 .navbar li.brand {
     float: left;
     margin-top: 10px;
 }
 
-.navbar ul.nav-staag li.brand {
-    color: white;
-    float: left;
-    margin-top: 10px;
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #646e83;
 }
 
-.navbar li {
-    float: right;
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .navbar button {
@@ -195,30 +205,6 @@ div.navbar {
     font-size: 1rem;
 }
 
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #646e83;
-}
-
-.navbar ul.nav-staag {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #1c1d22;
-}
-
-.navbar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
 .navbar li a:hover:not(.active) {
     background-color: #ffffff10;
 }
@@ -227,8 +213,39 @@ div.navbar {
     background-color: #ffaa07;
 }
 
+/* NavBar STAAG */
 .navbar ul.nav-staag li a.active {
     background-color: #7284b7;
+}
+
+.navbar ul.nav-staag {
+    background-color: #1c1d22;
+}
+
+.navbar ul.nav-staag li.brand {
+    color: white;
+}
+
+/* NavBar NexGrid */
+.navbar ul.nav-nexgrid li a.active {
+    color: white;
+    background-color: #0f1632;
+}
+
+.navbar ul.nav-nexgrid {
+    background-color: #FDBB30;
+}
+
+.navbar ul.nav-nexgrid li.brand {
+    color: black;
+}
+
+.navbar ul.nav-nexgrid li a:hover:not(.active) {
+    background-color: #0f163210;
+}
+
+.navbar ul.nav-nexgrid li a {
+    color: #0f1632;
 }
 
 /* Stuff */
