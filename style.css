@@ -107,6 +107,17 @@ footer li.footer-left {
     align-items: right;
 }
 
+.icon-link-box {
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.icon-link {
+    font-size: large;
+}
+
 .linkbox {
     border-radius: 10px;
     width: 400px;
