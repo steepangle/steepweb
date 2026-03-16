@@ -115,7 +115,8 @@ footer li.footer-left {
 }
 
 .icon-link {
-    font-size: large;
+    font-size: x-large;
+    text-align: center;
 }
 
 .linkbox {
