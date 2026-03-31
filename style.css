@@ -265,6 +265,19 @@ div.navbar {
     color: #0f1632;
 }
 
+/* Protocol */
+.protocol {
+    min-width: 70%;
+}
+
+.protocol h1, h2 {
+    margin-bottom: 0;
+}
+
+.protocol table, p, ol, ul, dl {
+    margin-top: 0;
+}
+
 /* Stuff */
 button {
     padding: 8px 16px;
