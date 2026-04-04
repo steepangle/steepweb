@@ -15,6 +15,15 @@
   - 700: Bold
 */
 
+/* some colors */
+:root {
+    --clr-lvl-1: #009F6B;
+    --clr-lvl-2: #0070C0;
+    --clr-lvl-3: #FFD300;
+    --clr-lvl-4: #FF6600;
+    --clr-lvl-5: #C40233;
+}
+
 body {
     font-family: "Ubuntu", Arial, sans-serif;
     background-color: #ffffff;
