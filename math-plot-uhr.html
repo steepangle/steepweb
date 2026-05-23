@@ -7,7 +7,7 @@
     <title>Uhr</title>
     <link rel="icon" href="./media/logo-steepangle.png" type="img/png">
     <link rel="stylesheet" href="./style.css" type="text/css">
-   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 
     <style>
         body {
@@ -133,44 +133,82 @@
         //    * Variablendefinitionen und for-Schleifen
         //    * drawCoordinateSystem() auskommentieren oder nicht
         ///////////////////////////////////////////////////////////////////////////////
-        // ANFANG ZEICHENBEREICH
+        // ANFANG ZEICHENBEREICH //////////////////////////////////////////////////////
         ///////////////////////////////////////////////////////////////////////////////
 
         async function zeichnen() {
-            drawCoordinateSystem();
+            // drawCoordinateSystem();
 
-            for (let t = 0; t <= 1; t += 0.001) {
-                let x = -4 + t * 9;
-                let y = -2 + t * 3;
-                putPixel(x, y, 255, 0, 0, 2);
-                //await sleep(1);
-            }
-
-            //putText("Gerade", 6.1, 1.1, 255, 0, 0, 16);
-
+            // Ziffernblatt
             for (let t = 0; t <= (2 * Math.PI); t += 0.001) {
-                putPixel(2 * Math.cos(t) - 3, 2 * Math.sin(t) + 1, 0, 0, 255, 1);
-                //if (Math.floor(1000*t)%10 == 0)
-                //    await sleep(1);
+                putPixel(4 * Math.cos(t), 4 * Math.sin(t), 0, 0, 0, 4);
             }
 
-            for (let t = 0; t < 5 * Math.PI; t += 0.001) {
-                let x = 0.1 * t * Math.cos(t);
-                let y = 0.1 * t * Math.sin(t);
-                putPixel(x, y, 255, 0, 255, 2);
-                //if (Math.floor(1000 * t) % 10 == 0)
-                //    await sleep(1);
+            // Minuten- und Stundenstriche (60x)
+            for (let i = 0; i < 60; i++) {
+                let winkel = (i * 2 * Math.PI) / 60;
+
+                let startRadius = 3.7; // Standard-Startpunkt für kleine Minutenstriche
+                let dicke = 2;         // Standard-Dicke
+
+                if (i % 5 === 0) {
+                    // Volle Stunde
+                    startRadius = 3.5; // Längerer Strich
+                    dicke = 5;         // Fett
+                    
+                    if (i % 15 === 0) {
+                        // Die Hauptstunden:
+                        startRadius = 3.3; // Noch länger
+                        dicke = 9;         // Extra fett
+                    }
+                }
+
+                // Strich zeichnen
+                for (let r = startRadius; r <= 4.0; r += 0.01) {
+                    let x = r * Math.cos(winkel);
+                    let y = r * Math.sin(winkel);
+                    putPixel(x, y, 0, 0, 0, dicke);
+                }
             }
 
-            for (let t = 0; t <= (2*Math.PI); t += 0.001) {
-                putPixel(4*Math.cos(t), 4*sin(t), 0, 0, 0, 1);
+            // Alle Stundenzahlen von 1 bis 12 automatisch platzieren
+            for (let stunde = 1; stunde <= 12; stunde++) {
+                
+                let winkelZahl = (Math.PI / 2) - (stunde * (Math.PI / 6));
+                
+                let xZahl = 3 * Math.cos(winkelZahl);
+                let yZahl = 3 * Math.sin(winkelZahl);
+
+                // Hauptstunden größer
+                let groesse = (stunde % 3 === 0) ? 40 : 24;
+
+                putText(stunde.toString(), xZahl, yZahl, 0, 0, 0, groesse);
             }
 
-            // Statische Uhrzeit:   14:00
+            // MINUTENZEIGER (senkrecht)
+            for (let l = 0; l <= 3.5; l += 0.01) {
+                putPixel(0, l, 0, 0, 255, 4); // Blauer Zeiger
+            }
+
+            // STUNDENZEIGER für (14:00)
+            const winkelStunde = Math.PI / 6; // Winkel pro Stunde
+
+            for (let l = 0; l <= 2.3; l += 0.01) {
+                let x = l * Math.cos(winkelStunde);
+                let y = l * Math.sin(winkelStunde);
+                putPixel(x, y, 255, 0, 0, 6); // Roter Zeiger
+            }
+
+            // MITTELPUNKT
+            for (let r = 0; r <= 0.12; r += 0.01) {
+                for (let t = 0; t <= 2 * Math.PI; t += 0.1) {
+                    putPixel(r * Math.cos(t), r * Math.sin(t), 0, 0, 0, 2);
+                }
+            }
         }
 
         ///////////////////////////////////////////////////////////////////////////////
-        // ENDE ZEICHENBEREICH
+        // ENDE ZEICHENBEREICH ////////////////////////////////////////////////////////
         ///////////////////////////////////////////////////////////////////////////////
 
         zeichnen();

@@ -3,7 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Parameterdarstellung</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathPlot</title>
+    <link rel="icon" href="./media/logo-steepangle.png" type="img/png">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
     <style>
         body {
             background-color: #222;
@@ -153,7 +158,7 @@
                 let x = 0.1 * t * Math.cos(t);
                 let y = 0.1 * t * Math.sin(t);
                 putPixel(x, y, 255, 0, 255, 2);
-                if (Math.floor(1000 * t) % 10 == 0)
+                if (Math.floor(1000 * t) % 100 == 0)
                     await sleep(1);
             }
 
