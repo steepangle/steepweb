@@ -287,6 +287,39 @@ div.navbar {
     margin-top: 0;
 }
 
+/* Dropdown Details */
+
+.drop-section summary {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    list-style: none;
+    position: relative;
+    padding-right: 25px;
+}
+
+.drop-section summary::after {
+  content: "⮟";
+  position: absolute;
+  right: 0;
+  font-size: 1em;
+  transform: rotate(0deg);
+  transition: 0.3s ease;
+}
+
+.drop-section[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.drop-section {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border-left: 4px solid dodgerblue;
+  background-color: aliceblue;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
 /* Stuff */
 button {
     padding: 8px 16px;
