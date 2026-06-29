@@ -315,6 +315,7 @@ div.navbar {
   padding: 10px 15px;
   border-left: 4px solid dodgerblue;
   background-color: aliceblue;
+  color: black;
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
