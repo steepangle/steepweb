@@ -274,6 +274,35 @@ div.navbar {
     color: #0f1632;
 }
 
+/* NavBar SUAST */
+.navbar ul.nav-suast li a.active {
+    color: white;
+    background-color: #0f1632;
+}
+
+.navbar ul.nav-suast {
+    background-color: #FDBB30;
+}
+
+.navbar ul.nav-suast li.brand {
+    color: black;
+}
+
+.navbar ul.nav-suast li a:hover:not(.active) {
+    background-color: #0f163210;
+}
+
+.navbar ul.nav-suast li a {
+    color: #0f1632;
+}
+
+.navbar ul.nav-suast h1.brand img {
+    width: 74px;
+    margin-top: -15px;
+    margin-inline: 7px;
+    vertical-align: top;
+}
+
 /* Protocol */
 .protocol {
     min-width: 70%;
