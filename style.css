@@ -29,6 +29,8 @@
     --nexgrid-blue: #0f1632;    /* Iter Blue */
     --nexgrid-yellow: #FDBB30;  /* Iter Yellow */
 
+    --ysu-purple: #6667AB;      /* (w3-clr-of-the-year) 2022 - Veri Peri */
+
     --cdmu-gray: #646e83;       /* Navy Blue 212, ANA 608 */
     --cdmu-yellow: #ffaa07;     /* (w3-ana-614) Aircraft Yellow */
 
@@ -290,29 +292,29 @@ div.navbar {
     color: var(--nexgrid-blue);
 }
 
-/* NavBar SUAST */
-.navbar ul.nav-suast li a.active {
+/* NavBar YSU */
+.navbar ul.nav-ysu li a.active {
     color: white;
     background-color: var(--nexgrid-blue);
 }
 
-.navbar ul.nav-suast {
-    background-color: var(--nexgrid-yellow);
+.navbar ul.nav-ysu {
+    background-color: var(--ysu-purple);
 }
 
-.navbar ul.nav-suast li.brand {
-    color: black;
-}
-
-.navbar ul.nav-suast li a:hover:not(.active) {
-    background-color: #0f163210;
-}
-
-.navbar ul.nav-suast li a {
+.navbar ul.nav-ysu li.brand {
     color: var(--nexgrid-blue);
 }
 
-.navbar ul.nav-suast h1.brand img {
+.navbar ul.nav-ysu li a:hover:not(.active) {
+    background-color: #0f163210;
+}
+
+.navbar ul.nav-ysu li a {
+    color: white;
+}
+
+.navbar ul.nav-ysu h1.brand img {
     width: 74px;
     margin-top: -15px;
     margin-inline: 7px;
